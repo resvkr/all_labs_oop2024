@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane prefHeight="56.0" prefWidth="641.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/22" fx:controller="com.ebabak.alculator.CalculatorController">
+
+   <children>
+      <TextField fx:id="leftFeild" />
+      <TextField fx:id="rightFeild" prefHeight="26.0" prefWidth="222.0" GridPane.columnIndex="2" />
+      <TextField fx:id="resultFeild" GridPane.columnIndex="4" />
+      <ChoiceBox fx:id="choiseBox" prefWidth="150.0" GridPane.columnIndex="1" />
+      <Label prefHeight="18.0" prefWidth="32.0" text="=" textAlignment="CENTER" GridPane.columnIndex="3" />
+      <Button fx:id="button" mnemonicParsing="false"   prefHeight="26.0" prefWidth="202.0" onAction="#solve" text="Button" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+   </children>
+</GridPane>
